@@ -1,6 +1,9 @@
+import Algorithm.Bubble;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Bubble b = new Bubble();
+        b.bubbleAnalysis();
     }
 }
