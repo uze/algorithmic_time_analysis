@@ -1,6 +1,7 @@
 import Algorithm.Bubble;
 import Algorithm.Insertion;
 import Algorithm.Merge;
+import Algorithm.Quick;
 
 public class Main {
 
@@ -8,8 +9,11 @@ public class Main {
         Bubble bubbleAlgorithm = new Bubble();
         Insertion insertionAlgorithm = new Insertion();
         Merge mergeAlgorithm = new Merge();
+        Quick quickAlgorithm = new Quick();
 
-        bubbleAlgorithm.bubbleAnalysis();
+        quickAlgorithm.quickAnalysis(Quick.generateIntegerArray());
+
+        /* bubbleAlgorithm.bubbleAnalysis();
 
         System.out.println("\n\n");
 
@@ -17,7 +21,7 @@ public class Main {
 
         System.out.println("\n\n");
         
-        mergeAlgorithm.mergeAnalysis();
+        mergeAlgorithm.mergeAnalysis(); */
 
     }
 }
