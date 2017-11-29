@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Quick {
 
     public static Integer[] generateIntegerArray() {
-        Integer[] generatedArray = new Integer[20];
-        for (int i = 0; i < 20; i++) {
+        Integer[] generatedArray = new Integer[1000];
+        for (int i = 0; i < 1000; i++) {
             generatedArray[i] = ((int)(Math.random()*100 + 1));
         }
         return generatedArray;
@@ -44,14 +44,11 @@ public class Quick {
         return generatedArray;
     }
 
-    public <E extends Comparable<E>> void quickAnalysis(E[] arr){
+    public <E extends Comparable<E>> void quickAnalysis(E[] arr, String type){
         long start = System.nanoTime();
         quickSort(arr, 0, 19);
-        for(E e: arr){
-            System.out.print(e + ", ");
-        }
         
-        System.out.println("[Integer]: " + (System.nanoTime() - start) + " nano seconds.\n");
+        System.out.println(type + (System.nanoTime() - start) + " nano seconds.\n");
     }
 
     private <E extends Comparable<E>> void quickSort (E[] arr, int low, int high)

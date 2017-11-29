@@ -11,9 +11,9 @@ public class Main {
         Merge mergeAlgorithm = new Merge();
         Quick quickAlgorithm = new Quick();
 
-        quickAlgorithm.quickAnalysis(Quick.generateIntegerArray());
 
-        /* bubbleAlgorithm.bubbleAnalysis();
+
+        bubbleAlgorithm.bubbleAnalysis();
 
         System.out.println("\n\n");
 
@@ -21,7 +21,15 @@ public class Main {
 
         System.out.println("\n\n");
         
-        mergeAlgorithm.mergeAnalysis(); */
+        mergeAlgorithm.mergeAnalysis(); 
+
+        System.out.println("\n\n");
+
+        quickAlgorithm.quickAnalysis(Quick.generateIntegerArray(), "[Integer]: ");
+        quickAlgorithm.quickAnalysis(Quick.generateLongArray(), "[Long]: ");
+        quickAlgorithm.quickAnalysis(Quick.generateDoubleArray(), "[Double]: ");
+        quickAlgorithm.quickAnalysis(Quick.generateFloatArray(), "[Float]: ");
+        quickAlgorithm.quickAnalysis(Quick.generateStringArray(), "[String]: ");
 
     }
 }
